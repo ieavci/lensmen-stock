@@ -1,0 +1,79 @@
+{% load static %} <!-- static dosya kullandığımızı belirttik -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    {% include 'partials/navbar.html' %}
+
+
+    <div style="margin: 9px 150px 9px 150px;">
+        <div class="card">
+            <div class="card-header">
+                Vizyon
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-2 p-3">
+                    <p style="font-size: medium;">Fotoğrafçılık ve fotoğrafları paylaşmak, insanların dünyayı farklı bir gözle görmelerini sağlamak
+                        ve
+                        duyguları, anıları ve hikayeleri en etkileyici şekilde aktarmak için güçlü bir araçtır.</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Misyon
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-2 p-3">
+                    <p style="font-size: medium;">Misyonumuz, özgün ve etkileyici fotoğraflar çekerek insanların yaşamlarına değer katmak,
+                        anılarını ölümsüzleştirmek ve duygularını paylaşmak için en kaliteli hizmeti sunmaktır. Aynı
+                        zamanda, fotoğrafları paylaşarak insanlar arasında bağlar kurmayı ve toplumun güzellikleriyle
+                        ilgili farkındalık yaratmayı hedefliyoruz. Her karede gerçekliği yakalamak için yaratıcılığımızı
+                        kullanırken, müşterilerimizin beklentilerini aşmak ve onların özel anlarını ölümsüzleştirmek
+                        için özenle çalışıyoruz. İnsanların duygusal bağ kurabilecekleri ve ilham alabilecekleri bir
+                        görsel deneyim sunmayı amaçlıyoruz. Fotoğrafçılık ve fotoğrafları paylaşmak aracılığıyla
+                        toplumda pozitif değişimler yaratmayı, farklı kültürleri anlamayı ve birlikte yaşamayı teşvik
+                        ediyoruz..</p>
+                </blockquote>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div style="margin: 9px 150px 9px 150px;">
+        <div class="card text-center">
+            <div class="card-header">
+                Öyle ki
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Yaşamaya Değer Anlar</h5>
+                <p class="card-text">Paylaştıkça güzel anlamlar kazanan cansız fotoğraflar.</p>
+                <a href="{% url 'home' %}" class="btn btn-primary">Gezinmeye Devam Et</a>
+            </div>
+            <div class="card-footer text-muted">
+                www.lensmanstock.com
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

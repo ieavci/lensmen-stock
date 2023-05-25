@@ -1,0 +1,10 @@
+{% load static %}
+
+<div class="card mt-2">
+    <img src="{% static 'img/'|add:k.foto_veri %}" class="card-img-top" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">{{k.foto_adi}}</h5>
+   <!-- <p class="card-text">{{k.foto_aciklama}}</p> -->
+    <a href="{% url 'story' k.id %}" class="btn btn-dark">Hikayesini Oku</a>
+    </div>
+</div>
